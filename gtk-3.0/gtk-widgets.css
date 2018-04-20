@@ -1748,7 +1748,7 @@ levelbar block.empty {
  * Scale *
  *********/
 scale {
-    padding: 11px 5px;
+    padding: 9px 5px;
     min-height: 10px;
     min-width: 10px;
     background-color: transparent;
@@ -3411,6 +3411,10 @@ GtkBubbleWindow toolbar {
 /******************
  * Stack switcher *
  ******************/
+.stack-switcher {
+    background-color: transparent;
+}
+ 
 .stack-switcher button {
     min-height: 20px;
     min-width: 80px;
@@ -3536,7 +3540,7 @@ messagedialog.csd decoration {
 
 .titlebar .titlebutton:backdrop {
     color: alpha(@theme_fg_color, 0.6);
-    background-color: @theme_bg_color;
+    background-color: shade(@theme_bg_color, 0.85);
     border-left-color: #757a84;
     border-right-color: #757a84;
     border-bottom-color: #5f646e;
@@ -3560,7 +3564,9 @@ messagedialog.csd decoration {
 
 .titlebar:backdrop,
 .titlebar:not(headerbar):backdrop {
-    background-image: none;
+    background-image: linear-gradient(to bottom,
+                                      #abafb8,
+                                      #c0c4cb);
     background-color: @theme_bg_color;
     color: @theme_fg_color;
     text-shadow: none;
@@ -3574,7 +3580,9 @@ headerbar.default-decoration,
     min-height: 28px;
     padding: 0 3px;
     background-color: @toolbar_bg_color;
-    background-image: image(@toolbar_bg_color);
+    background-image: linear-gradient(to bottom,
+                                      #e3e5e8,
+                                      #aaafb9);
     border-bottom-width: 0;
 }
 
@@ -3583,5 +3591,7 @@ headerbar.default-decoration:backdrop,
 .default-decoration.titlebar:backdrop:not(headerbar),
 .csd .default-decoration.titlebar:backdrop:not(headerbar) {
     background-color: @theme_bg_color;
-    background-image: image(@theme_bg_color);
+    background-image: linear-gradient(to bottom,
+                                      #abafb8,
+                                      #c0c4cb);
 }
