@@ -1,6 +1,6 @@
 # Bridge | ScionicSpectre | Elbullazul
 
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#313739\ntooltip_fg_color:#4c4c4c\nselected_bg_color:#3b82d6\nselected_fg_color:#FFFFFF\ntext_color:#4c4c4c\nbg_color:#F5F5F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#ffffff"
+gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#313739\ntooltip_fg_color:#4c4c4c\nselected_bg_color:#4b6983\nselected_fg_color:#FFFFFF\ntext_color:#4c4c4c\nbg_color:#F5F5F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#ffffff"
 
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
@@ -12,91 +12,91 @@ style "default"
 
 	# Style Properties
 
-	GtkWidget::focus-line-width	= 1
-	GtkMenuBar::window-dragging	= 1
-	GtkToolbar::window-dragging	= 1
+	GtkWidget::focus-line-width   = 1
+	GtkMenuBar::window-dragging  	= 1
+	GtkToolbar::window-dragging	  = 1
 	GtkToolbar::internal-padding	= 4
-    GtkToolButton::icon-spacing     = 4
+  GtkToolButton::icon-spacing   = 4
 
-    GtkWidget::tooltip-radius       = 3
-    GtkWidget::tooltip-alpha        = 235
-    GtkWidget::new-tooltip-style    = 1 #for compatibility
+  GtkWidget::tooltip-radius       = 3
+  GtkWidget::tooltip-alpha        = 235
+  GtkWidget::new-tooltip-style    = 1 #for compatibility
 
 	GtkSeparatorMenuItem::horizontal-padding = 3
-	GtkSeparatorMenuItem::wide-separators = 1
-	GtkSeparatorMenuItem::separator-height = 1
+	GtkSeparatorMenuItem::wide-separators    = 1
+	GtkSeparatorMenuItem::separator-height   = 1
 
-	GtkButton::child-displacement-y	= 0
-	GtkButton::default-border	= { 0, 0, 0, 0 }
-	GtkButton::default-outside_border       = { 0, 0, 0, 0 }
+	GtkButton::child-displacement-y	  = 0
+	GtkButton::default-border	        = { 0, 0, 0, 0 }
+	GtkButton::default-outside_border = { 0, 0, 0, 0 }
 
-    GtkEntry::state-hint            = 1
+  GtkEntry::state-hint = 1
 
 	GtkScrollbar::trough-border	= 0
-	GtkRange::trough-border		= 0
-	GtkRange::slider-width		= 13
-	GtkRange::stepper-size		= 0
+	GtkRange::trough-border		  = 0
+	GtkRange::slider-width		  = 13
+	GtkRange::stepper-size		  = 16
 	
-	GtkProgressBar::min-horizontal-bar-height = 18
-	GtkProgressBar::min-vertical-bar-width = 18
+	GtkProgressBar::min-horizontal-bar-height   = 18
+	GtkProgressBar::min-vertical-bar-width      = 18
 
-	GtkScrollbar::activate-slider           = 1
-	GtkScrollbar::has-backward-stepper		= 0  
-	GtkScrollbar::has-forward-stepper		= 0
-    GtkScrollbar::min-slider-length             = 42
-	GtkScrolledWindow::scrollbar-spacing		= 0
+	GtkScrollbar::activate-slider               = 1
+	GtkScrollbar::has-backward-stepper          = 1  
+	GtkScrollbar::has-forward-stepper           = 1
+  GtkScrollbar::min-slider-length             = 42
+	GtkScrolledWindow::scrollbar-spacing		    = 0
 	GtkScrolledWindow::scrollbars-within-bevel	= 1
 
-	GtkVScale::slider_length 	= 16
-	GtkVScale::slider_width 	= 16
-	GtkHScale::slider_length 	= 16
-	GtkHScale::slider_width 	= 16
+	GtkVScale::slider_length 	= 22
+	GtkVScale::slider_width 	= 22
+	GtkHScale::slider_length 	= 22
+	GtkHScale::slider_width 	= 22
 
-	GtkStatusbar::shadow_type	= GTK_SHADOW_NONE
-	GtkSpinButton::shadow_type 	= GTK_SHADOW_NONE
-	GtkMenuBar::shadow-type		= GTK_SHADOW_NONE
-	GtkToolbar::shadow-type		= GTK_SHADOW_NONE
+	GtkStatusbar::shadow_type	    = GTK_SHADOW_NONE
+	GtkSpinButton::shadow_type    = GTK_SHADOW_NONE
+	GtkMenuBar::shadow-type		    = GTK_SHADOW_NONE
+	GtkToolbar::shadow-type		    = GTK_SHADOW_NONE
 	GtkMenuBar::internal-padding	= 0	#( every window is misaligned for the sake of menus ):
-	GtkMenu::horizontal-padding	    = 0
+	GtkMenu::horizontal-padding   = 0
 	GtkMenu::vertical-padding	    = 0
 
 	GtkCheckButton::indicator_spacing	= 1
-	GtkCheckButton::indicator-size = 18
+	GtkCheckButton::indicator-size    = 18
 	GtkOptionMenu::indicator_spacing	= { 8, 2, 0, 0 }
 
 	GtkTreeView::row_ending_details 	= 0
 	GtkTreeView::expander-size		    = 11
 	GtkTreeView::vertical-separator		= 4
 	GtkTreeView::horizontal-separator	= 4
-	GtkTreeView::allow-rules		    = 1
+	GtkTreeView::allow-rules		      = 1
 
     GtkExpander::expander-size = 11
 
 	# Colors
 
-	bg[NORMAL]		= @bg_color
-	bg[PRELIGHT]		= shade (1.02, @bg_color)
-	bg[SELECTED]		= @selected_bg_color
-	bg[INSENSITIVE] 	= @bg_color
-	bg[ACTIVE]		= shade (0.9, @bg_color)
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.02, @bg_color)
+	bg[SELECTED] = @selected_bg_color
+	bg[INSENSITIVE] = @bg_color
+	bg[ACTIVE] = shade (0.9, @bg_color)
 
-	fg[NORMAL]		= @text_color
-	fg[PRELIGHT]		= @fg_color
-	fg[SELECTED]		= @selected_fg_color
-	fg[INSENSITIVE]		= darker (@bg_color)
-	fg[ACTIVE]		= @fg_color
+	fg[NORMAL] = @text_color
+	fg[PRELIGHT] = @fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[INSENSITIVE] = darker (@bg_color)
+	fg[ACTIVE] = @fg_color
 
-	text[NORMAL]		= @text_color
-	text[PRELIGHT]		= @text_color
-	text[SELECTED]		= @selected_fg_color
+	text[NORMAL] = @text_color
+	text[PRELIGHT] = @text_color
+	text[SELECTED] = @selected_fg_color
 	text[INSENSITIVE]	= darker (@bg_color)
-	text[ACTIVE]		= @selected_fg_color
+	text[ACTIVE] = @selected_fg_color
 
-	base[NORMAL]		= @base_color
-	base[PRELIGHT]		= shade (0.95, @bg_color)
-	base[SELECTED]		= @selected_bg_color
+	base[NORMAL] = @base_color
+	base[PRELIGHT] = shade (0.95, @bg_color)
+	base[SELECTED] = @selected_bg_color
 	base[INSENSITIVE]	= @bg_color
-	base[ACTIVE]		= shade (0.9, @selected_bg_color)
+	base[ACTIVE] = shade (0.9, @selected_bg_color)
 
 	# For succinctness, all reasonable pixmap options remain here
 
@@ -107,20 +107,20 @@ style "default"
 
 	image 
 	{
-            function        		= CHECK
-            recolorable     		= TRUE
-            state 			= NORMAL
-            shadow          		= OUT
-            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
-            overlay_stretch 		= FALSE
-        }
+      function        		= CHECK
+      recolorable     		= TRUE
+      state 			= NORMAL
+      shadow          		= OUT
+      overlay_file    		= "Check-Radio/checkbox-unchecked.png"
+      overlay_stretch 		= FALSE
+  }
 	image 
 	{
             function        		= CHECK
             recolorable     		= TRUE
             state 			= PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -129,7 +129,7 @@ style "default"
             recolorable     		= TRUE
             state 			= ACTIVE
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-active.png"
             overlay_stretch 		= FALSE
         }
 	image
@@ -165,7 +165,7 @@ style "default"
             recolorable     		= TRUE
 	    	  state 		= PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/checkbox-checked.png"
+            overlay_file    		= "Check-Radio/checkbox-checked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -174,7 +174,7 @@ style "default"
             recolorable     		= TRUE
 	    state 		        = ACTIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/checkbox-checked.png"
+            overlay_file    		= "Check-Radio/checkbox-checked-active.png"
             overlay_stretch 		= FALSE
         }
 	image
@@ -203,7 +203,7 @@ style "default"
             function        		= OPTION
             state 			= NORMAL
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -211,7 +211,7 @@ style "default"
             function        		= OPTION
             state 			= PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -219,7 +219,7 @@ style "default"
             function        		= OPTION
             state 			= ACTIVE
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected-active.png"
             overlay_stretch 		= FALSE
         }
 	image
@@ -227,7 +227,7 @@ style "default"
             function        		= OPTION
             state 			= SELECTED
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -235,7 +235,7 @@ style "default"
             function        		= OPTION
             state 			= INSENSITIVE
             shadow         		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked-insensitive.png"
+            overlay_file    		= "Check-Radio/radio-unselected-insensitive.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -243,7 +243,7 @@ style "default"
             function        		= OPTION
 	    state 			= NORMAL
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected.png"
             overlay_stretch 		= FALSE
         }
  	image 
@@ -251,7 +251,7 @@ style "default"
             function        		= OPTION
 	    state			= PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -259,7 +259,7 @@ style "default"
             function        		= OPTION
 	    state			= ACTIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected-active.png"
             overlay_stretch	 	= FALSE
         }
 	image
@@ -267,7 +267,7 @@ style "default"
             function        		= OPTION
 	    state			= SELECTED
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected.png"
             overlay_stretch	 	= FALSE
         }
 	image 
@@ -275,7 +275,7 @@ style "default"
             function        		= OPTION
 	    state 			= INSENSITIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked-insensitive.png"
+            overlay_file    		= "Check-Radio/radio-selected-insensitive.png"
             overlay_stretch 		= FALSE
         }
 
@@ -564,7 +564,7 @@ style "ooo_stepper_hack"
 {
 	GtkScrollbar::stepper-size	        = 13
 	GtkScrollbar::has-backward-stepper	= 1
-	GtkScrollbar::has-forward-stepper	= 1
+	GtkScrollbar::has-forward-stepper	  = 1
 }
 
 style "scrollbar"
@@ -606,7 +606,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= ACTIVE
-      file				= "Scrollbars/slider-horiz-active.png" 
+      file				= "Scrollbars/slider-horiz.png" 
       border			= { 7, 7, 5, 5 }
       stretch			= TRUE
       orientation		= HORIZONTAL
@@ -616,7 +616,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= PRELIGHT
-      file				= "Scrollbars/slider-horiz-prelight.png" 
+      file				= "Scrollbars/slider-horiz.png" 
       border			= { 7, 7, 5, 5 }
       stretch			= TRUE
       orientation		= HORIZONTAL
@@ -626,7 +626,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= INSENSITIVE
-      file				= "Scrollbars/slider-horiz-insens.png"
+      file				= "Scrollbars/slider-horiz.png"
       border			= { 7, 7, 5, 5 }
       stretch			= TRUE
       orientation		= HORIZONTAL
@@ -648,7 +648,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= ACTIVE
-      file				= "Scrollbars/slider-vert-active.png" 
+      file				= "Scrollbars/slider-vert.png" 
       border			= { 5, 5, 7, 7 }
       stretch			= TRUE
       orientation		= VERTICAL
@@ -658,7 +658,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= PRELIGHT
-      file				= "Scrollbars/slider-vert-prelight.png" 
+      file				= "Scrollbars/slider-vert.png" 
       border			= { 5, 5, 7, 7 }
       stretch			= TRUE
       orientation		= VERTICAL
@@ -668,7 +668,7 @@ style "scrollbar"
     {
       function			= SLIDER
       state           	= INSENSITIVE
-      file				= "Scrollbars/slider-vert-insens.png"
+      file				= "Scrollbars/slider-vert.png"
       border			= { 5, 5, 7, 7 }
       stretch			= TRUE
       orientation		= VERTICAL
@@ -744,16 +744,6 @@ style "menu_item"
 	xthickness	= 2
 	ythickness	= 3
 
-        # HACK: Gtk doesn't actually read this value
-        # while rendering the menu items, but Libreoffice
-        # does; setting this value equal to the one in
-        # fg[PRELIGHT] ensures a code path in the LO theming code
-        # that falls back to a dark text color for menu item text
-        # highlight. The price to pay is black text on menus as well,
-        # but at least it's readable.
-        # See https://bugs.freedesktop.org/show_bug.cgi?id=38038
-        bg[SELECTED]    = @selected_fg_color
-
 	bg[PRELIGHT]	= @selected_bg_color
 	fg[PRELIGHT]	= @selected_fg_color
 	text[PRELIGHT]	= @selected_fg_color
@@ -769,7 +759,7 @@ style "menu_item"
             recolorable     		= TRUE
             state 			        = NORMAL
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/menucheck.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -778,7 +768,7 @@ style "menu_item"
             recolorable     		= TRUE
             state 			        = PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/menucheck.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -787,7 +777,7 @@ style "menu_item"
             recolorable     		= TRUE
             state 			        = ACTIVE
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/menucheck.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-active.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -796,7 +786,7 @@ style "menu_item"
             recolorable     		= TRUE
             state 			        = INSENSITIVE
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/menucheck-insensitive.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-insensitive.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -805,7 +795,7 @@ style "menu_item"
             recolorable     		= TRUE
 	    state	 		            = NORMAL
             shadow          		= IN
-            overlay_file    		= "Check-Radio/menucheck-prelight.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked.png"
             overlay_stretch	 	    = FALSE
         }
 	image 
@@ -814,7 +804,7 @@ style "menu_item"
             recolorable     		= TRUE
             state                   = PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/menucheck-prelight.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-prelight.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -823,7 +813,7 @@ style "menu_item"
             recolorable     		= TRUE
 	    state                       = ACTIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/menucheck-prelight.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-active.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -832,7 +822,7 @@ style "menu_item"
    	    recolorable     	    	= TRUE
        	    state 			        = INSENSITIVE
        	    shadow          		= IN
-            overlay_file    		= "Check-Radio/menucheck-prelight-insensitive.png"
+            overlay_file    		= "Check-Radio/checkbox-unchecked-insensitive.png"
        	    overlay_stretch 		= FALSE
 	}
 
@@ -843,7 +833,7 @@ style "menu_item"
             function        		= OPTION
             state 		        	= NORMAL
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -851,7 +841,7 @@ style "menu_item"
             function        		= OPTION
             state 			        = PRELIGHT
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -859,7 +849,7 @@ style "menu_item"
             function        		= OPTION
             state 			        = ACTIVE
             shadow          		= OUT
-            overlay_file    		= "Check-Radio/option-unchecked.png"
+            overlay_file    		= "Check-Radio/radio-unselected.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -867,7 +857,7 @@ style "menu_item"
             function        		= OPTION
             state 			        = INSENSITIVE
             shadow         	    	= OUT
-            overlay_file    		= "Check-Radio/option-unchecked-insensitive.png"
+            overlay_file    		= "Check-Radio/radio-unselected-insensitive.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -875,7 +865,7 @@ style "menu_item"
             function        		= OPTION
     	    state 		        	= NORMAL
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected.png"
             overlay_stretch 		= FALSE
         }
  	image 
@@ -883,7 +873,7 @@ style "menu_item"
             function        		= OPTION
     	    state	    	    	= PRELIGHT
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected-hover.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -891,7 +881,7 @@ style "menu_item"
             function        		= OPTION
     	    state	        		= ACTIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked.png"
+            overlay_file    		= "Check-Radio/radio-selected-active.png"
             overlay_stretch	 	    = FALSE
         }
 	image 
@@ -899,7 +889,7 @@ style "menu_item"
             function        		= OPTION
     	    state 			        = INSENSITIVE
             shadow          		= IN
-            overlay_file    		= "Check-Radio/option-checked-insensitive.png"
+            overlay_file    		= "Check-Radio/radio-selected-insensitive.png"
             overlay_stretch 		= FALSE
         }
 	image 
@@ -1970,7 +1960,7 @@ style "range"
       file				= "Others/null.png"
       border            = { 0, 0, 0, 0 }
       stretch           = TRUE
-      overlay_file		= "Range/slider-horiz-prelight.png"
+      overlay_file		= "Range/slider-horiz.png"
       overlay_stretch	= FALSE
       orientation	    = HORIZONTAL
     }
@@ -2006,7 +1996,7 @@ style "range"
       file				= "Others/null.png"
       border			= { 0, 0, 0, 0 }
       stretch			= TRUE
-      overlay_file		= "Range/slider-vert-prelight.png"
+      overlay_file		= "Range/slider-vert.png"
       overlay_stretch	= FALSE
       orientation		= VERTICAL
     }
