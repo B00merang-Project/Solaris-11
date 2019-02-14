@@ -1732,6 +1732,9 @@ switch {
   switch:checked {
     border-color: @theme_selected_bg_color;
     background-color: @theme_selected_bg_color; }
+    switch:checked:backdrop {
+      border-color: @theme_unfocused_selected_bg_color;
+      background-color: @theme_unfocused_selected_bg_color; }
   switch:disabled {
     border-color: @theme_disabled_bg_color;
     background-color: @theme_disabled_bg_color; }
