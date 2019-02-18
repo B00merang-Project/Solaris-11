@@ -2081,9 +2081,6 @@ combobox button:not(:only-child) {
 combobox entry:not(:only-child) {
   border-right-width: 0; }
 
-stackswitcher button.text-button {
-  min-width: 80px; }
-
 tooltip {
   border-radius: 4px;
   box-shadow: none; }
