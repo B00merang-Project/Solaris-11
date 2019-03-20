@@ -1,6 +1,14 @@
 # Bridge | ScionicSpectre | Elbullazul
 
-gtk-color-scheme = "base_color:#FFFFFF\nfg_color:#313739\ntooltip_fg_color:#4c4c4c\nselected_bg_color:#4b6983\nselected_fg_color:#FFFFFF\ntext_color:#4c4c4c\nbg_color:#F5F5F5\ninsensitive_bg_color:#F4F4F2\ntooltip_bg_color:#ffffff"
+gtk-color-scheme = "bg_color:#e8e9ed"
+gtk-color-scheme = "fg_color:#000000"
+gtk-color-scheme = "base_color:#FFFFFF"
+gtk-color-scheme = "text_color:#000000"
+gtk-color-scheme = "selected_bg_color:#4b6983"
+gtk-color-scheme = "selected_fg_color:#FFFFFF"
+gtk-color-scheme = "insensitive_bg_color:#F4F4F2"
+gtk-color-scheme = "tooltip_fg_color:#000000"
+gtk-color-scheme = "tooltip_bg_color:#ffffff"
 
 gtk-auto-mnemonics              = 1
 gtk-primary-button-warps-slider = 1
@@ -30,11 +38,13 @@ style "default"
 	GtkButton::default-border	        = { 0, 0, 0, 0 }
 	GtkButton::default-outside_border = { 0, 0, 0, 0 }
 
-  GtkEntry::state-hint = 1
+	GtkEntry		::honors-transparent-bg-hint 		= 1
+	GtkEntry		::progress-border			= { 3, 3, 3, 3 }
+	GtkEntry		::state-hint 				= 0
 
 	GtkScrollbar::trough-border	= 0
 	GtkRange::trough-border		  = 0
-	GtkRange::slider-width		  = 13
+	GtkRange::slider-width		  = 16
 	GtkRange::stepper-size		  = 16
 	
 	GtkProgressBar::min-horizontal-bar-height   = 18
@@ -279,180 +289,7 @@ style "default"
             overlay_stretch 		= FALSE
         }
 
-	# Arrows
-
-	image
-	{
-            function			= ARROW
-	    overlay_file		= "Arrows/arrow-up.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= UP
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= PRELIGHT
-	    overlay_file		= "Arrows/arrow-up-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= UP
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= ACTIVE
-	    overlay_file		= "Arrows/arrow-up-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= UP
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= INSENSITIVE
-	    overlay_file		= "Arrows/arrow-up-insens.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= UP
-	}
-
-
-	image
-	{
-            function			= ARROW
-	    state			= NORMAL
-	    overlay_file		= "Arrows/arrow-down.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= DOWN
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= PRELIGHT
-	    overlay_file		= "Arrows/arrow-down-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= DOWN
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= ACTIVE
-	    overlay_file		= "Arrows/arrow-down-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= DOWN
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= INSENSITIVE
-	    overlay_file		= "Arrows/arrow-down-insens.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= DOWN
-	}
-
-	image
-	{
-	    function			= ARROW
-	    overlay_file		= "Arrows/arrow-left.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= LEFT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= PRELIGHT
-	    overlay_file		= "Arrows/arrow-left-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= LEFT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= ACTIVE
-	    overlay_file		= "Arrows/arrow-left-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= LEFT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= INSENSITIVE
-	    overlay_file		= "Arrows/arrow-left-insens.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= LEFT
-	}
-
-	image
-	{
-	    function			= ARROW
-	    overlay_file		= "Arrows/arrow-right.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= RIGHT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= PRELIGHT
-	    overlay_file		= "Arrows/arrow-right-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= RIGHT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= ACTIVE
-	    overlay_file		= "Arrows/arrow-right-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= RIGHT
-	}
-	image
-	{
-	    function			= ARROW
-	    state			= INSENSITIVE
-	    overlay_file		= "Arrows/arrow-right-insens.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	    arrow_direction		= RIGHT
-	}
-
-
-	# Option Menu Arrows
-
-	image
-	{
-	    function                    = TAB
-	    state		        = INSENSITIVE
-	    overlay_file	        = "Arrows/arrow-down-insens.png"
-	    overlay_stretch	        = FALSE
-	}
-	image
-	{
-	    function			= TAB
-	    state			= NORMAL
-	    overlay_file		= "Arrows/arrow-down.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	}
-	image
-	{
-	    function			= TAB
-	    state			= PRELIGHT
-	    overlay_file		= "Arrows/arrow-down-prelight.png"
-	    overlay_border		= { 0, 0, 0, 0 }
-	    overlay_stretch		= FALSE
-	}
+	
 
 	# Lines
 
@@ -576,7 +413,7 @@ style "scrollbar"
       function			= BOX
       detail			= "trough"
       file			    = "Scrollbars/trough-scrollbar-horiz.png"
-      border			= { 19, 19, 2, 2 }
+      border			= { 29, 29, 2, 2 }
       stretch			= TRUE
       orientation		= HORIZONTAL
     }
@@ -585,7 +422,7 @@ style "scrollbar"
       function			= BOX
       detail			= "trough"
       file			    = "Scrollbars/trough-scrollbar-vert.png"
-      border			= { 2, 2, 19, 19 }
+      border			= { 2, 2, 29, 29 }
       stretch			= TRUE
       orientation		= VERTICAL
     }
@@ -597,7 +434,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= NORMAL
       file				= "Scrollbars/slider-horiz.png" 
-      border			= { 7, 7, 5, 5 }
+      border			= { 19, 19, 7, 7 }
       stretch			= TRUE
       orientation		= HORIZONTAL
 
@@ -607,7 +444,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= ACTIVE
       file				= "Scrollbars/slider-horiz.png" 
-      border			= { 7, 7, 5, 5 }
+      border			= { 19, 19, 7, 7 }
       stretch			= TRUE
       orientation		= HORIZONTAL
 
@@ -617,7 +454,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= PRELIGHT
       file				= "Scrollbars/slider-horiz.png" 
-      border			= { 7, 7, 5, 5 }
+      border			= { 19, 19, 7, 7 }
       stretch			= TRUE
       orientation		= HORIZONTAL
 
@@ -627,7 +464,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= INSENSITIVE
       file				= "Scrollbars/slider-horiz.png"
-      border			= { 7, 7, 5, 5 }
+      border			= { 19, 19, 7, 7 }
       stretch			= TRUE
       orientation		= HORIZONTAL
     }
@@ -639,7 +476,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= NORMAL
       file				= "Scrollbars/slider-vert.png" 
-      border			= { 5, 5, 7, 7 }
+      border			= { 7, 7, 19, 19 }
       stretch			= TRUE
       orientation		= VERTICAL
 
@@ -649,7 +486,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= ACTIVE
       file				= "Scrollbars/slider-vert.png" 
-      border			= { 5, 5, 7, 7 }
+      border			= { 7, 7, 19, 19 }
       stretch			= TRUE
       orientation		= VERTICAL
 
@@ -659,7 +496,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= PRELIGHT
       file				= "Scrollbars/slider-vert.png" 
-      border			= { 5, 5, 7, 7 }
+      border			= { 7, 7, 19, 19 }
       stretch			= TRUE
       orientation		= VERTICAL
 
@@ -669,7 +506,7 @@ style "scrollbar"
       function			= SLIDER
       state           	= INSENSITIVE
       file				= "Scrollbars/slider-vert.png"
-      border			= { 5, 5, 7, 7 }
+      border			= { 7, 7, 19, 19 }
       stretch			= TRUE
       orientation		= VERTICAL
 
@@ -680,33 +517,34 @@ style "scrollbar"
 style "menubar"
 {
 
-	bg[PRELIGHT]	= @bg_color
-	fg[SELECTED]	= @selected_fg_color
+  bg[PRELIGHT]	= @bg_color
+  fg[SELECTED]	= @selected_fg_color
 
-	xthickness	= 0
-	ythickness	= 0
+  xthickness	= 0
+  ythickness	= 0
 
-	engine "pixmap"
-	{
-        image
-        {
-          function      = BOX
-	      recolorable   = TRUE
-	      state		    = NORMAL
-          file          = "Menu-Menubar/menubar.png"
-          stretch       = TRUE
-        }
-	  image
-          {
-	      function		= BOX
-	      recolorable	= TRUE
-	      state		    = PRELIGHT
-	      file		    = "Menu-Menubar/menubar_button.png"
+  engine "pixmap"
+  {
+    image
+    {
+      function      = BOX
+      recolorable   = TRUE
+      state		    = NORMAL
+      file          = "Menu-Menubar/menubar.png"
+      stretch       = TRUE
+    }
 
-	      border		= { 4, 4, 4, 4 }
-	      stretch		= TRUE
-	  }
-	}
+    image
+    {
+      function		= BOX
+      recolorable	= TRUE
+      state		    = PRELIGHT
+      file		    = "Menu-Menubar/menubar_button.svg"
+
+      border		= { 4, 4, 4, 4 }
+      stretch		= TRUE
+    }
+  }
 }
 
 style "menu"
@@ -928,7 +766,7 @@ style "menubar_item"
 	xthickness	= 2
 	ythickness	= 3
 	bg[PRELIGHT]	= @selected_fg_color
-	fg[PRELIGHT]	= @text_color
+	fg[PRELIGHT]	= @selected_fg_color
 }
 
 style "button"
@@ -1023,122 +861,30 @@ style "checkbutton"
 
 style "entry"
 {
-	xthickness	= 3
-	ythickness   	= 4
+  xthickness	= 3
+  ythickness   	= 4
 
-        base[NORMAL] = @base_color
-        base[INSENSITIVE] = @insensitive_bg_color
+  bg[NORMAL]        = @base_color
+  bg[SELECTED]		= @selected_bg_color
+  base[INSENSITIVE]	= shade (1.06, @bg_color)
+  fg[SELECTED]		= @text_color
 
-	engine "pixmap"
-	{
-	image
-	{
-		function		= SHADOW
-		detail			= "entry"
-        state           = NORMAL
-		shadow			= IN
-		file			= "Entry/entry-border-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-	image
-	{
-		function		= SHADOW
-		detail			= "entry"
-        state           = INSENSITIVE
-		shadow			= IN
-		file			= "Entry/entry-border-disabled-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-        image
-        {
-		function		= SHADOW
-		detail			= "entry"
-        state           = ACTIVE
-		file			= "Entry/entry-border-active-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-	image
-	{
-        function        = FLAT_BOX
-        detail          = "entry_bg"
-        state           = NORMAL
-		file			= "Others/null.png"
-		border			= { 0, 0, 0, 0 }
-		stretch			= TRUE
-	}
-	image
-	{
-        function        = FLAT_BOX
-        detail          = "entry_bg"
-        state           = ACTIVE
-		file			= "Others/null.png"
-		border			= { 0, 0, 0, 0 }
-		stretch			= TRUE
-	}
-    }
+  engine "murrine"
+  {
+    contrast	= 0.4
+    reliefstyle	= 0
+    border_shades	= {1.0,1.0}
+    gradient_shades = {1.1,1.0,1.0,0.97}
+  }
 }
 
 style "notebook_entry"
 {
-	xthickness	= 3
-	ythickness   	= 4
+  xthickness	= 3
+  ythickness  = 3
 
-        base[NORMAL] 		= @base_color
-        base[INSENSITIVE] 	= @insensitive_bg_color
-
-	engine "pixmap"
-	{
-	image
-	{
-		function		= SHADOW
-		detail			= "entry"
-        state           = NORMAL
-		shadow			= IN
-		file			= "Entry/notebook-entry-border-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-	image
-	{
-		function		= SHADOW
-		detail			= "entry"
-        state           = INSENSITIVE
-		shadow			= IN
-		file			= "Entry/notebook-entry-border-disabled-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-        image
-        {
-		function		= SHADOW
-		detail			= "entry"
-        state           = ACTIVE
-		file			= "Entry/notebook-entry-border-active-bg.png"
-		border			= { 4, 4, 4, 4 }
-		stretch			= TRUE
-	}
-	image
-	{
-        function        = FLAT_BOX
-        detail          = "entry_bg"
-        state           = NORMAL
-		file			= "Others/null.png"
-		border			= { 0, 0, 0, 0 }
-		stretch			= TRUE
-	}
-	image
-	{
-        function        = FLAT_BOX
-        detail          = "entry_bg"
-        state           = ACTIVE
-		file			= "Others/null.png"
-		border			= { 0, 0, 0, 0 }
-		stretch			= TRUE
-	}
-	}
+  bg[NORMAL] = @base_color
+  bg[ACTIVE] = @bg_color
 }
 
 style "notebook_tab_label"
@@ -2086,22 +1832,22 @@ style "separator_menu_item"
 
 style "treeview_header"
 {
-    ythickness = 1
+  ythickness = 1
 
-    fg[NORMAL] = shade(0.55, @bg_color)
-    fg[PRELIGHT] = shade(0.80, @text_color)
-    font_name = "Bold"
+  fg[NORMAL] = @fg_color
+  fg[PRELIGHT] = @fg_color
+  font_name = "Bold"
 
-	engine "pixmap"
-	{
-	image 
-      	{
-        	function		= BOX
-		    file            = "Others/tree_header.png"
-		    border          = { 1, 1, 1, 1 }
-		    stretch         = TRUE
-    	}
+  engine "pixmap"
+  {
+    image 
+    {
+      function		= BOX
+      file            = "Others/null.png"
+      border          = { 1, 1, 1, 1 }
+      stretch         = TRUE
     }
+  }
 }
 
 style "scrolled_window"
