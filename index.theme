@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Solaris 11
+Comment=A GTK theme based on Solaris 11
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Solaris 11
+MetacityTheme=Solaris 11
+IconTheme=nimbus
+CursorTheme=DMZ-Black
+ButtonLayout=close,minimize,maximize:
