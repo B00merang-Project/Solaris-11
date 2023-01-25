@@ -485,8 +485,6 @@ button.suggested-action {
     border-top-color: #1a1b1c;
     border-left-color: #394045;
     border-right-color: #394045; }
-  button.suggested-action:disabled {
-    color: #dfe1e3; }
 
 button.link,
 link {
@@ -1981,7 +1979,6 @@ columnview row:not(:selected) cell editablelabel.editing text selection {
     border: none; }
 
 calendar {
-  padding: 2px;
   border-width: 1px;
   border-radius: 4px;
   border-style: solid;
@@ -1989,17 +1986,32 @@ calendar {
   color: #000000; }
   calendar.header {
     border: none;
-    color: #607B8B; }
+    border-bottom: 1px solid #b6cee3;
+    color: #000000; }
   calendar.button {
-    color: #607B8B; }
+    color: rgba(0, 0, 0, 0.45); }
+    calendar.button:hover {
+      color: #000000; }
+    calendar.button:backdrop {
+      color: rgba(0, 0, 0, 0.45); }
+    calendar.button:disabled {
+      color: rgba(93, 104, 114, 0.45); }
   calendar:selected {
-    border-radius: 0;
+    border-radius: 6px;
     color: #FFFFFF;
     background-color: #607B8B; }
+    calendar:selected:backdrop {
+      color: #FFFFFF;
+      background-color: #607B8B; }
   calendar:indeterminate {
-    color: alpha(currentColor, 0.55); }
+    color: alpha(currentColor, 0.1); }
   calendar.highlight {
-    color: #607B8B; }
+    color: #5d6872; }
+    calendar.highlight:backdrop {
+      color: #5d6872; }
+  calendar:backdrop {
+    color: #000000;
+    border-color: #9ebcd5; }
 
 messagedialog .background.csd {
   border-radius: 4px 4px 0 0;
