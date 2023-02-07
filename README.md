@@ -8,7 +8,6 @@ GTK theme based on the appearance of Solaris 11's **Nimbus** theme. [Light versi
 
 ### Supported platforms
 - Any GTK-based desktop
-- No shell-scpecitifc theme (yet)
 - Gnome
 
 ### Manual installation
