@@ -1627,11 +1627,15 @@ scale {
       margin-right: -12px; }
 
 progressbar {
-  padding: 0;
-  border: none;
-  color: gray;
-  background-color: transparent; }
-  progressbar.horizontal progress {
+  font-size: smaller;
+  color: gray; }
+  progressbar > trough {
+    border-radius: 0px;
+    border: 1px solid #b8bac4;
+    color: #000000;
+    background-image: linear-gradient(to bottom, #eff0f2, #dddee1 45%, #ced0d4 50%, #e3e5e9);
+    box-shadow: inset 0 -2px 2px 0 rgba(255, 255, 255, 0.6), inset 0 1px white; }
+  progressbar > trough > progress {
     border: 1px solid #89310d;
     border-radius: 0px;
     color: #FFFFFF;
@@ -1639,13 +1643,14 @@ progressbar {
     box-shadow: inset 0 -2px 2px 0 rgba(255, 255, 255, 0.4), inset 0 1px rgba(255, 255, 255, 0.2);
     border-right-width: 0;
     border-left-width: 0; }
-  progressbar.horizontal trough {
+  progressbar.vertical > trough {
     border-radius: 0px;
     border: 1px solid #b8bac4;
     color: #000000;
-    background-image: linear-gradient(to bottom, #eff0f2, #dddee1 45%, #ced0d4 50%, #e3e5e9);
-    box-shadow: inset 0 -2px 2px 0 rgba(255, 255, 255, 0.6), inset 0 1px white; }
-  progressbar.vertical progress {
+    border-radius: 0px;
+    background-image: linear-gradient(to right, #eff0f2, #dddee1 45%, #ced0d4 50%, #e3e5e9);
+    box-shadow: inset -2px 0 2px 0 rgba(255, 255, 255, 0.6), inset 1px 0 white; }
+  progressbar.vertical > trough > progress {
     border: 1px solid #89310d;
     border-radius: 0px;
     color: #FFFFFF;
@@ -1653,41 +1658,14 @@ progressbar {
     box-shadow: inset -2px 0 2px 0 rgba(255, 255, 255, 0.4), inset 1px 0 rgba(255, 255, 255, 0.2);
     border-top-width: 0;
     border-bottom-width: 0; }
-  progressbar.vertical trough {
-    border-radius: 0px;
-    border: 1px solid #b8bac4;
-    color: #000000;
-    border-radius: 0px;
-    background-image: linear-gradient(to right, #eff0f2, #dddee1 45%, #ced0d4 50%, #e3e5e9);
-    box-shadow: inset -2px 0 2px 0 rgba(255, 255, 255, 0.6), inset 1px 0 white; }
-  progressbar.horizontal trough, progressbar.horizontal progress {
+  progressbar.horizontal > trough {
+    min-width: 150px; }
+  progressbar.vertical > trough {
+    min-height: 80px; }
+  progressbar.horizontal > trough, progressbar.horizontal > trough > progress {
     min-height: 21px; }
-  progressbar.vertical trough, progressbar.vertical progress {
+  progressbar.vertical > trough, progressbar.vertical > trough > progress {
     min-width: 21px; }
-
-treeview.view.progressbar, treeview.view.progressbar:disabled {
-  color: #FFFFFF;
-  border-radius: 0;
-  background-color: #4B6983; }
-
-treeview.view.progressbar:focus, treeview.view.progressbar:selected:focus, treeview.view.progressbar:focus:selected, treeview.view.progressbar:focus:selected:focus, treeview.view.progressbar:disabled:selected {
-  border-radius: 0;
-  color: #4B6983;
-  background-color: #FFFFFF; }
-
-treeview.view.trough {
-  color: #000000;
-  background-color: rgba(0, 0, 0, 0.1);
-  border-radius: 0;
-  border: none; }
-  treeview.view.trough:selected, treeview.view.trough:selected:focus {
-    color: #FFFFFF;
-    background-color: rgba(0, 0, 0, 0.1);
-    border-radius: 0;
-    border: none; }
-
-infobar treeview.view trough, row:selected treeview.view trough {
-  background-color: rgba(0, 0, 0, 0.1); }
 
 levelbar trough {
   padding: 1px;
