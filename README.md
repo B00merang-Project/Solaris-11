@@ -1,4 +1,4 @@
-[![built-with-azurra-framework](https://github.com/B00merang-Project/Azurra_framework/raw/assets/azurra_framework_smaller.png)](https://github.com/B00merang-Project/Azurra_framework)
+[![built-with-azurra-framework](https://github.com/B00merang-Project/B00merang-Project.github.io/blob/master/resources/badges/azurra/badge_smaller.png)](https://github.com/B00merang-Project/Azurra_framework)
 
 # Solaris 11 Nimbus
 GTK theme based on the appearance of Solaris 11's **Nimbus** theme. [Light version](https://github.com/B00merang-Project/Solaris-11-Light) [Dark version](https://github.com/B00merang-Project/Solaris-11-Dark)
